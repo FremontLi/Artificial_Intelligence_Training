@@ -15,6 +15,6 @@ def get_current_time():
     # 函数体
     l_time = time.localtime()
     str_time = time.strftime('%Y-%m-%d',l_time)
-    print(l_time)
+    print(str_time)
 # 调用函数
 get_current_time()
