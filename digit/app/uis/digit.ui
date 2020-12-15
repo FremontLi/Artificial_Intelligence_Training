@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>696</width>
+    <height>485</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="lblImg">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>30</y>
+     <width>281</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>360</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>识别结果：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblResult">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>360</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCut">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>430</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>视频截取</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblImg_cut">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>40</y>
+     <width>291</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnUpload">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>430</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>本地上传</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnCut</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>cutImage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>129</x>
+     <y>277</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>152</x>
+     <y>147</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnUpload</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>loadImage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>210</x>
+     <y>310</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>298</x>
+     <y>166</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>cutImage()</slot>
+  <slot>loadImage()</slot>
+ </slots>
+</ui>

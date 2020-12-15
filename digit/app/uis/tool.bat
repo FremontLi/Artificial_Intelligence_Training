@@ -1,0 +1,1 @@
+ @pyuic5 -o  digitui.py  digit.ui
